@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Automatic Type Conversion</h1>
+    <p>JavaScript is a "loosely typed" language, which means that whenever an operator or statement is expecting a particular data-type, JavaScript will automatically convert the data to that type. The if() statement in the first example expects a boolean value, therefore whatever you define in the brackets will be converted to a boolean. The same is true for while() and do...while() statements</p>
+    <ul>
+        <li> false (of course!)</li>
+        <li> undefined </li>
+        <li> null</li>
+        <li> 0 (numeric zero) </li>
+        <li>"" (empty string)</li>
+        <li> NaN (Not A Number)</li>
+    </ul>
+    <script>
+        console.log(8 * null)
+        // → 0
+        console.log("5" - 1)
+        // → 4
+        console.log("5" + 1)
+        // → 51
+        console.log("five" * 2)
+        // → NaN
+        console.log(false == 0)
+        // → true~
+        console.log(null == undefined);
+        // → true
+        console.log(null == 0);
+        // → false
+        
+
+
+    </script>
+    
+</body>
+</html>
