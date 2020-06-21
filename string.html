@@ -6,10 +6,15 @@
         <title>Document</title>
     </head>
     <body>
-        <h1>Strings</h1>
-        <p>A JavaScript string stores a series of characters like "John Doe". A string can be any text inside double or single quotes var carName1 = "Volvo XC60"; var carName2 = 'Volvo XC60'; String indexes are zero-based: The first character is in position 0, the second in 1, and so on.        </p>
+            <h1>Strings</h1>
+            <img src="./images/string.png" width="300" height="200">
+            <p>. Strings are used to represent text. They are written by enclosing their content in quotes.`Down on the sea`</p>
+            <p>You can use single quotes, double quotes, or backticks to mark strings, as long as the quotes at the start and the end of the string match.</p>
+            <p> A quote that is preceded by a backslash will not end the string but be part of it. When an n character occurs after a backslash, it is interpreted as a newline. Similarly, a t after a backslash means a tab character.</p>
+            <p> Strings cannot be divided, multiplied, or subtracted, but the + operator can be used on them. It does not add, but it concatenates—it glues two strings together. The following line will produce the string "concatenate""con" + "cat" + "e" + "nate"</p>
+            <p>When you write something inside ${} in a template literal, its result will be computed, converted to a string, and included at that position. The example produces “half of 100 is 50”.</p>
 
-        <script>
+       <script>
             console.log ("This is the first line\nAnd this is the second");
             console.log ("A newline character is written like \"\\n\".");
             console.log ("con" + "cat" + "e" + "nate");
