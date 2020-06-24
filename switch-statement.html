@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Switch Statement </h1>
+    <p>The switch statement is used to perform different actions based on different conditions.</p>
+    <ul>
+        This is how it works:
+
+        <li> The switch expression is evaluated once.</li>
+        <li> The value of the expression is compared with the values of each case.;</li>
+        <li> If there is a match, the associated block of code is executed.</li>
+        <li>If there is no match, the default code block is executed.</li>    
+    </ul>
+    <script>
+        switch (prompt("What is the weather like?")) {
+        case "rainy":
+        console.log("Remember to bring an umbrella.");
+        break;
+        case "sunny":
+        console.log("Dress lightly.");
+        case "cloudy":
+        console.log("Go outside.");
+        break;
+        default:
+        console.log("Unknown weather type!");
+        break;
+        }
+    </script>
+    
+</body>
+</html>
