@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h1>Conditional Execution</h1>
+    <p>We may, for example, want to create a branching road, where the program takes the proper branch based on the situation at hand. This is called conditional execution.</p>
+    <p>Conditional execution is created with the if keyword in JavaScript.We might, for example, want to show the square of the input only if the input is actually a number.</p>
+    <p>You often won’t just have code that executes when a condition holds true,but also code that handles the other case. You can use the else keyword, together with if, to create two separate, alternative execution paths.</p>
+    
+    <script>
+        let theNumber = Number(prompt("Pick a number"));
+        if (!Number.isNaN(theNumber)) {
+        console.log("Your number is the square root of " +theNumber * theNumber);
+        } else {
+        console.log("Hey. Why didn't you give me a number?");
+        }
+   </script>
+    
+</body>
+</html>
