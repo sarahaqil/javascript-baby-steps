@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Optional argument</h1>
+      <p>We defined square with only one parameter. Yet when we call it with three,
+        the language doesn’t complain. It ignores the extra arguments and computes
+        the square of the first one. <br>
+        JavaScript is extremely broad-minded about the number of arguments you pass to a function. If you pass too many, the extra ones are ignored. If you
+        pass too few, the missing parameters get assigned the value undefined. <br>
+        The upside is that this behavior can be used to allow a function to be called
+        with different numbers of arguments. For example, this minus function tries to
+        imitate the - operator by acting on either one or two arguments
+     </p>
+<script>
+        function square(x) { return x * x; }
+        console.log(square(4, true, "hedgehog"));
+        // → 16
+        function minus(a, b) {
+        if (b === undefined) return -a;
+        else return a - b;
+        }
+        console.log(minus(10));
+        // → -10
+        console.log(minus(10, 5));
+        // → 5
+        function power(base, exponent = 2) {
+        let result = 1;
+        for (let count = 0; count < exponent; count++) {
+        result *= base;
+        }
+        return result;
+        }
+        console.log(power(4));
+        // → 16
+        console.log(power(2, 6));
+        // → 64
+        console.log("C", "O", 2);
+        // → C O 2
+
+ </script>
+</body>
+</html>
