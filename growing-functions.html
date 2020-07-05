@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Growing functions</h1>
+    <p>We want to write a program that prints two numbers: the numbers of cows and chickens on a farm, with the words Cows and Chickens after them and zeros padded before both numbers so that they are always three digits long. <br>
+        007 Cows <br>
+        011 Chickens <br>
+        This asks for a function of two arguments—the number of cows and the number of chickens.</p>
+    <p>But just as we are about to send the farmer the code (along with a hefty invoice), she calls and tells us she’s also started keeping pigs ,As we’re in the process of copying and pasting those four lines one more time, we stop and reconsider. There has to be a better way</p>
+    <p>Instead of lifting out the repeated part of our program wholesale, let’s try to pick out a single concept.</p>    
+<script>
+        function printFarmInventory(cows, chickens) {
+        let cowString = String(cows);
+        while (cowString.length < 3) {
+        cowString = "0" + cowString;
+        }
+        console.log(`${cowString} Cows`);
+        let chickenString = String(chickens);
+        while (chickenString.length < 3) {
+        chickenString = "0" + chickenString;
+        }
+        console.log(`${chickenString} Chickens`);
+        }
+        printFarmInventory(7, 11);
+       
+        function printZeroPaddedWithLabel(number, label) {
+        let numberString = String(number);
+        while (numberString.length < 3) {
+        numberString = "0" + numberString;
+        }
+        console.log(`${numberString} ${label}`);
+        }
+        function printFarmInventory(cows, chickens, pigs) {
+        printZeroPaddedWithLabel(cows, "Cows");
+        printZeroPaddedWithLabel(chickens, "Chickens");
+        printZeroPaddedWithLabel(pigs, "Pigs");
+        }
+        printFarmInventory(7, 11, 3);
+
+</script>
+</body>
+</html>
