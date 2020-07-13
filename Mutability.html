@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./images/download(3).jpg" width="300px" height="200px">
+    <h1>Mutability</h1>
+    <p>Mutable is a type of variable that can be changed. In JavaScript, only objects and arrays are mutable, not primitive values.A mutable object is an object whose state can be modified after it is created.</p>
+    <script>
+        let object1 = {value: 10};
+        let object2 = object1;
+        let object3 = {value: 10};
+        console.log(object1 == object2);
+        // → true 
+        console.log(object1 == object3);
+        // → false
+        object1.value = 15;
+        console.log(object2.value);
+        // → 15
+        console.log(object3.value);
+        // → 10
+    </script>
+</body>
+</html>
